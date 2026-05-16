@@ -28,8 +28,10 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files
-.env*.local
+# env files (keep tracked templates like .env.example)
+.env
+.env.*
+!.env.example
 
 # vercel
 .vercel
@@ -37,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# caches & tooling
+.turbo
+.eslintcache
+
+# IDE / OS
+.idea/
+Thumbs.db
+ehthumbs.db
+Desktop.ini
